@@ -67,7 +67,6 @@ if ( isset( $_SERVER['PATH_INFO'] ) ) {
 	<meta name="description" content="freeCodeCamp - APIs and Microservices Project: Timestamp Microservice">
 	<link rel="icon" type="image/x-icon" href="<?php echo $path_prefix; ?>favicon.ico">
 	<link rel="stylesheet" href="<?php echo $path_prefix; ?>assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php echo $path_prefix; ?>assets/css/style.css">
 </head>
 <body>
 	<div class="container">
