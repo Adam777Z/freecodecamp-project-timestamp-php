@@ -56,6 +56,13 @@ if ( isset( $_SERVER['PATH_INFO'] ) ) {
 		header( 'Content-Type: application/json; charset=utf-8' );
 		echo json_encode( $data );
 		exit;
+	} else {
+		if ( $path_prefix == '' ) {
+			$path_prefix = './';
+		}
+
+		header( 'Location: ' . $path_prefix );
+		exit;
 	}
 }
 ?><!DOCTYPE html>
