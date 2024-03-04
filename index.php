@@ -61,7 +61,7 @@ if ( isset( $_SERVER['PATH_INFO'] ) ) {
 			$path_prefix = './';
 		}
 
-		header( 'Location: ' . $path_prefix );
+		header( "Location: $path_prefix" );
 		exit;
 	}
 }
