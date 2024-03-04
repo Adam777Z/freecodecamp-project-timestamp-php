@@ -57,13 +57,19 @@ if ( isset( $_SERVER['PATH_INFO'] ) ) {
 		echo json_encode( $data );
 		exit;
 	} else {
-		if ( $path_prefix == '' ) {
-			$path_prefix = './';
-		}
-
-		header( "Location: $path_prefix" );
-		exit;
+		redirect_to_index();
 	}
+}
+
+function redirect_to_index() {
+	global $path_prefix;
+
+	if ( $path_prefix == '' ) {
+		$path_prefix = './';
+	}
+
+	header( "Location: $path_prefix" );
+	exit;
 }
 ?><!DOCTYPE html>
 <html lang="en">
